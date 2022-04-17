@@ -1,0 +1,31 @@
+{
+  "name": "proshop",
+  "version": "1.0.0",
+  "description": "MERN shopping cart app",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohitagrawal939/ecommerce-reactjs-redux-express-mongodb.git"
+  },
+  "author": "Mohit Agrawal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mohitagrawal939/ecommerce-reactjs-redux-express-mongodb/issues"
+  },
+  "homepage": "https://github.com/mohitagrawal939/ecommerce-reactjs-redux-express-mongodb#readme",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "concurrently": "^7.1.0",
+    "nodemon": "^2.0.15"
+  }
+}
